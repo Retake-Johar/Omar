@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | One Page</title>
+    <!-- File Style Css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Boxicons Link -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#" class="logo">Omar~</a>
+            <ul class="nav_list">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Work</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="nav_right">
+                <a href="#" class="btn">Hier me</a>
+                <i class='bx bx-menu' id="menu_icon"></i>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero_text">
+                <h5>🖐 Hello, my name is</h5>
+                <h1>Omar Ahmde</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum iure voluptate 
+                    perferendis totam neque ducimus doloremque soluta eius illo ab?</p>
+                <a href="#" class="h_btn">Download CV</a>
+                <!-- <div class="social">
+                    <a href="#"><i class='bx bxl-youtube'></i></a>
+                    <a href="#"><i class='bx bxl-github'></i></a>
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                    <a href="#"></a>
+                    <a href="#"></a>
+                </div> -->
+            </div>
+
+            <div class="hero_img">
+                <img src="images/man.png">
+            </div>
+        </div>
+    </section>
+
+    <script>
+        let menu = document.querySelector('#menu_icon');
+        let nav_list = document.querySelector('.nav_list');
+
+        menu.onclick = () => {
+            menu.classList.toggle('bx-x');
+            nav_list.classList.toggle('open');
+        }
+    </script>
+</body>
+</html>
